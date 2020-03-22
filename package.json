@@ -4,11 +4,14 @@
   "main": "index.js",
   "license": "MIT",
   "devDependencies": {
-    "@typescript-eslint/parser": "^2.24.0",
+    "@types/react": "^16.9.25",
     "@typescript-eslint/eslint-plugin": "^2.24.0",
+    "@typescript-eslint/parser": "^2.24.0",
     "eslint": "^6.8.0",
     "eslint-config-prettier": "^6.10.0",
     "eslint-plugin-prettier": "^3.1.2",
+    "eslint-plugin-react": "^7.19.0",
+    "eslint-plugin-react-hooks": "^2.5.1",
     "prettier": "^2.0.1",
     "typescript": "^3.8.3",
     "yarn-deduplicate": "^2.0.0"

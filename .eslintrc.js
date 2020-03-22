@@ -1,8 +1,15 @@
 module.exports = {
   root: true,
+  settings: {
+    react: {
+      "version": "detect"
+    }
+  },
   plugins: [
     "prettier",
-    "@typescript-eslint"
+    "@typescript-eslint",
+    "react-hooks",
+    "react"
   ],
   env: {
     es6: true,
@@ -14,18 +21,18 @@ module.exports = {
     "plugin:@typescript-eslint/recommended",
     "plugin:@typescript-eslint/recommended-requiring-type-checking",
     "plugin:prettier/recommended",
-    "prettier"
+    "prettier",
+    "prettier/react",
+    "plugin:react/recommended"
   ],
   rules: {
     "prettier/prettier": "warn",
     "@typescript-eslint/explicit-function-return-type": "off",
-    "@typescript-eslint/no-floating-promises": "error"
+    "@typescript-eslint/no-floating-promises": "error",
+    "react-hooks/rules-of-hooks": "error", // Checks rules of Hooks
+    "react-hooks/exhaustive-deps": "warn" // Checks effect dependencies
   },
   parserOptions: {
-    sourceType: "module",
-    ecmaFeatures: {
-      jsx: false,
-    },
     project: ["./tsconfig.json"],
     tsconfigRootDir: __dirname,
   },
