@@ -1,3 +1,3 @@
 export interface IBla {
-  a: string,
+  a: string;
 }
